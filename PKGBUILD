@@ -10,16 +10,16 @@ license=('GPL')
 depends=('gtk2' 'polkit')
 makedepends=('intltool')
 source=(git+git://github.com/git-fal7/lxpolkit)
-md5sums=('2597b00035fe1d695219e0f9bfa8c26f')
+md5sums=('SKIPT')
 
 build() {
-  cd "$srcdir/$pkgname-$pkgver"
+  cd "$srcdir/$pkgname"
   ./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib/$pkgname
   make
 }
 
 package() {
-  cd "$srcdir/$pkgname-$pkgver"
+  cd "$srcdir/$pkgname"
   make DESTDIR="$pkgdir/" install
 }
 
