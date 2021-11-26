@@ -37,7 +37,7 @@ static GOptionEntry option_entries[] =
 
 void show_msg(GtkWindow* parent, GtkMessageType type, const char* msg)
 {
-    GtkWidget* dlg = gtk_message_dialog_new(parent, GTK_DIALOG_MODAL, type, GTK_BUTTONS_OK, msg);
+    GtkWidget* dlg = gtk_message_dialog_new(parent, GTK_DIALOG_MODAL, type, GTK_BUTTONS_OK, "%s", msg);
     const char* title = NULL;
     switch(type)
     {
