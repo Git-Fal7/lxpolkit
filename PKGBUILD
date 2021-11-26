@@ -1,5 +1,3 @@
-# Maintainer: Balló György <ballogyor+arch at gmail dot com>
-
 pkgname=lxpolkit
 pkgver=0.1.0
 pkgrel=1
@@ -10,10 +8,11 @@ license=('GPL')
 depends=('gtk2' 'polkit')
 makedepends=('intltool')
 source=(git+git://github.com/git-fal7/lxpolkit)
-md5sums=('SKIPT')
+md5sums=('SKIP')
 
 build() {
   cd "$srcdir/$pkgname"
+  chmod +x ./configure
   ./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib/$pkgname
   make
 }
@@ -22,5 +21,3 @@ package() {
   cd "$srcdir/$pkgname"
   make DESTDIR="$pkgdir/" install
 }
-
-# vim:set ts=2 sw=2 et:
