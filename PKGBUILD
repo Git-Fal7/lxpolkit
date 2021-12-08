@@ -9,7 +9,7 @@ url="http://blog.lxde.org/?p=674"
 license=('GPL')
 depends=('gtk2' 'polkit')
 makedepends=('intltool')
-source=(git+git://github.com/git-fal7/lxpolkit)
+source=(git+git://github.com/git-fal7/lxpolkit-hyphen)
 md5sums=('SKIP')
 
 build() {
