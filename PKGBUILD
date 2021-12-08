@@ -1,5 +1,5 @@
 pkgname=lxpolkit
-pkgver=0.1.0
+pkgver=1.0
 pkgrel=1
 conflicts=('lxsession' 'community/lxsession')
 pkgdesc="Simple policykit authentication agent for LXDE"
