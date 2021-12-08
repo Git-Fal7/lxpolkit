@@ -1,7 +1,7 @@
-pkgname=lxpolkit
+pkgname=lxpolkit-hyphwn
 pkgver=1.0
 pkgrel=1
-conflicts=('lxsession' 'community/lxsession')
+conflicts=('lxsession')
 pkgdesc="Simple policykit authentication agent for LXDE"
 arch=('i686' 'x86_64')
 url="http://blog.lxde.org/?p=674"
