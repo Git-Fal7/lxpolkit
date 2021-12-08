@@ -1,4 +1,4 @@
-pkgname=lxpolkit-hyphwn
+pkgname=lxpolkit-hyphen
 pkgver=1.0
 pkgrel=1
 conflicts=('lxsession')
